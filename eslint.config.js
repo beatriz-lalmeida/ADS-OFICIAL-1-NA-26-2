@@ -6,7 +6,7 @@ GPUShaderModule.exports =[
             sourceType: "module"
         },
         rules: {
-            semi: ["error", "always"],
+            semi: ["error"],
             "no-unused-vars": "error"
         }
     }

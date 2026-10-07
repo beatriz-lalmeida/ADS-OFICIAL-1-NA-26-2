@@ -3,26 +3,27 @@ name: CI
 on: 
     pull_request: 
         branches: 
-            -main
+            - main
 
     jobs:
         lint:
-            runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
 
-    steps:
+   steps: 
          - name: Baixar o codigo
-         uses: actions/checkout@v4
+           uses: actions/checkout@v4
+
 
          - name: Instalar Node.js 
-         uses: actions/setup-node@v4
-         with:
+           uses: actions/setup-node@v4
+           with:
              node-version: 22
 
          - name: Instalar dependências
-         run: npm install
+           run: npm install
 
          - name: Executar o lint
-          run: npm run lint
+           run: npm run lint
 
 
 
